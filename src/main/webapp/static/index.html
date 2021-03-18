@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>js测试QQ登录</title>
+	<script src="/api/static/js/jquery2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+
+	$(function() {
+		var strWenMeng = "https://wenmeng.online/api/";
+
+		var myLocal = "http://localhost:8080/api/";
+
+		var useURL = myLocal;
+
+		// 显示文件信息
+		// $("#login").click(function(){
+		// 	$("#date").text("");
+		// 	var code = $("#code").val();
+		// 	$("#code").val("")
+		// 	$.ajax({
+		// 		url: useURL +"QQLogin/"+code,
+		// 		type:"post",
+		// 		crossDomain: true,
+		// 		xhrFields: {
+		// 			withCredentials: true
+		// 		},
+		// 		ContentType: "application/json",
+		// 		success:function(result){
+		// 			$.each(result, function(i,field) {
+		// 				$("#date").append(i+"\t: "+field+"\r\n")
+		// 			});
+		// 		}
+		// 	})
+		// })
+
+	})
+</script>
+<div>
+	<a href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&response_type=code&client_id=101865958&scope=all&redirect_uri=http://www.wenmeng.online/api/toQQLogin&
+	state=http://localhost:8080/ShareAbout/login
+" target="_blank">QQ登录测试</a><br />
+
+</div>
+
+</body>
+</html>
