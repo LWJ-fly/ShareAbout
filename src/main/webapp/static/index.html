@@ -1,50 +1,185 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>js测试QQ登录</title>
-	<script src="/api/static/js/jquery2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <meta charset="UTF-8">
+    <title>闻梦家园</title>
 </head>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.1.0/jquery.js"></script>
+<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.1.0/jquery.js"></script>
 <body>
 
-<script type="text/javascript">
 
-	$(function() {
-		var strWenMeng = "https://wenmeng.online/api/";
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">Brand</a>
+                </div>
 
-		var myLocal = "http://localhost:8080/api/";
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="#">Link</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">相关文档<strong class="caret"></strong></a>
+                            <ul class="dropdown-menu">
+                                <li class="divider">
+                                <li>
+                                    <a href="https://wiki.connect.qq.com/get_user_info" target="_blank">QQ官方网站</a>
+                                </li>
+                                <li class="divider">
+                                <li>
+                                    <a href="http://localhost:8080/ShareAbout/" target="_blank">主页</a>
+                                </li>
+                                <li class="divider">
+                                <li>
+                                    <a href="https://note.youdao.com/web/#/file/recent/markdown/WEB69538557d5171053a3b159604776db4c/" target="_blank">有道云笔记</a>
+                                </li>
+                                <li class="divider">
+                                </li>
+                                <li>
+                                    <a href="#">Separated link</a>
+                                </li>
+                                <li class="divider">
+                                </li>
+                                <li>
+                                    <a href="#">One more separated link</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" />
+                        </div> <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#">Link</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a href="#">Another action</a>
+                                </li>
+                                <li>
+                                    <a href="#">Something else here</a>
+                                </li>
+                                <li class="divider">
+                                </li>
+                                <li>
+                                    <a href="#">Separated link</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
 
-		var useURL = myLocal;
+            </nav>
+            <div class="jumbotron">
+                <h1>
+                    解析json串!
+                </h1>
 
-		// 显示文件信息
-		// $("#login").click(function(){
-		// 	$("#date").text("");
-		// 	var code = $("#code").val();
-		// 	$("#code").val("")
-		// 	$.ajax({
-		// 		url: useURL +"QQLogin/"+code,
-		// 		type:"post",
-		// 		crossDomain: true,
-		// 		xhrFields: {
-		// 			withCredentials: true
-		// 		},
-		// 		ContentType: "application/json",
-		// 		success:function(result){
-		// 			$.each(result, function(i,field) {
-		// 				$("#date").append(i+"\t: "+field+"\r\n")
-		// 			});
-		// 		}
-		// 	})
-		// })
+                <p>
+                    {
+                </p>
+                <p>
+                    "ret": 0,
+                </p>
+                <p>
+                    "msg": "",
+                </p>
+                <p>
+                    "is_lost": 0,
+                </p>
+                <p>
+                    "gender": "男",
+                </p>
+                <p>
+                    "is_yellow_vip": "0",
+                </p>
+                <p>
+                    "city": "周口",
+                </p>
+                <p>
+                    "year": "1997",
+                </p>
+                <p>
+                    "level": "0",
+                </p>
+                <p>
+                    "openid": "6A0328498675FD699A5389103F7D2BC5",
+                </p>
+                <p>
+                    "figureurl_2": "http://thirdqq.qlogo.cn/qqopen/f96SOdjXMjwf088icqgOGXCw7jHseMqIEC/100?v=8eff",
+                </p>
+                <p>
+                    "figureurl_1": "http://thirdqq.qlogo.cn/qqopen/f96SOdjXMjwf088icqgOGXCw7jHseMqIEC/40?v=8eff",
+                </p>
+                <p>
+                    "gender_type": 1,
+                </p>
+                <p>
+                    "is_yellow_year_vip": "0",
+                </p>
+                <p>
+                    "province": "河南",
+                </p>
+                <p>
+                    "constellation": "",
+                </p>
+                <p>
+                    "figureurl": "http://thirdqq.qlogo.cn/qqopen/f96SOdjXMjwf088icqgOGXCw7jHseMqIEC/40?v=8eff",
+                </p>
+                <p>
+                    "figureurl_type": "1",
+                </p>
+                <p>
+                    "figureurl_qq": "http://thirdqq.qlogo.cn/qqopen/f96SOdjXMjwf088icqgOGXCw7jHseMqIEC/100?v=8eff",
+                </p>
+                <p>
+                    "nickname": "火狐狸",
+                </p>
+                <p>
+                    "yellow_vip_level": "0",
+                </p>
+                <p>
+                    "figureurl_qq_1": "http://thirdqq.qlogo.cn/qqopen/f96SOdjXMjwf088icqgOGXCw7jHseMqIEC/40?v=8eff",
+                </p>
+                <p>
+                    "vip": "0",
+                </p>
+                <p>
+                    "figureurl_qq_2": "http://thirdqq.qlogo.cn/qqopen/f96SOdjXMjwf088icqgOGXCw7jHseMqIEC/100?v=8eff"
+                </p>
+                <p>
+                    }
+                </p>
 
-	})
-</script>
-<div>
-	<a href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&response_type=code&client_id=101865958&scope=all&redirect_uri=http://www.wenmeng.online/api/toQQLogin&
-	state=http://localhost:8080/ShareAbout/login
-" target="_blank">QQ登录测试</a><br />
-
+                <p>
+                    <a class="btn btn-primary btn-large" href="https://graph.qq.com/oauth2.0/authorize?response_type=code&client_id=101865958&scope=all&redirect_uri=http://www.wenmeng.online/api/toQQLogin&
+state=http://localhost:8080/ShareAbout/login">QQ登录</a>
+                </p>
+            </div>
+        </div>
+    </div>
 </div>
+
 
 </body>
 </html>
